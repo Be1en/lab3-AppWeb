@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar número a servlet</title>
+    <link rel="stylesheet" 
+              href="webjars/bootstrap/5.3.1/css/bootstrap.min.css" type="text/css" />
+</head>
+<body>
+    <div class="container mt-5">
+    <h1>Selecciona un Servlet:</h1>
+    <div class="m-3">
+    <!-- Botón 1 -->
+    <form action="ServletPares" method="get">
+        <div class="mb-3" >
+            <input type="number" style="width: 550px;" name="n" placeholder="Ingrese un número" required>
+        <button type="submit" class="btn btn-primary"  style="margin: 10px; padding: 10px; border-radius: 10px; width: 250px;">Ir a Servlet Pares</button>
+        </div>
+    </form>
+    </div>
+    <div class="m-3">
+    <!-- Botón 2 -->
+    <form action="ServletPrimos" method="get">
+        <div class="mb-3">
+        <input type="number" style="width: 550px;" name="n" placeholder="Ingrese un número" required>
+        <button type="submit" class="btn btn-primary"  style="margin: 10px; padding: 10px; border-radius: 10px; width: 250px;">Ir a Servlet Primos</button>
+        </div>
+    </form>
+</div>
+    <!-- Botón 3 -->
+    <div class="m-3">
+    <form action="ServletMultiplicaciones" method="get">
+        <div class="mb-3" >
+        <input type="number" style="width: 550px;" name="n" placeholder="Ingrese un número" required>
+        <button type="submit" class="btn btn-primary" style="margin: 10px; padding: 10px; border-radius: 10px; width: 250px;">Ir a Servlet Multiplicaciones</button>
+        </div>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

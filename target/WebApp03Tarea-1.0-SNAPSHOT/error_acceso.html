@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" 
+              href="webjars/bootstrap/5.3.1/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <body>
+        <div class="m-5">
+        <h1 class="m-5">ERROR</h1>
+        <div id="mensajeError" class="m-5">
+            <p></p> <!-- Agrega un párrafo vacío para mostrar el mensaje de error -->
+        </div>
+
+        <script>
+            // Obtén el mensaje de error de la URL
+            const params = new URLSearchParams(window.location.search);
+            const mensaje = params.get("mensaje");
+
+            // Muestra el mensaje en la página
+            if (mensaje) {
+                document.getElementById("mensajeError").textContent = mensaje;
+            }
+        </script>
+        <div class="m-5">
+                <div class="form-check">
+                <a href="login.jsp">
+                    <button class="btn btn-primary">Regresar</button>
+                </a>
+            </div>
+        </div>
+       </div>
+    </body>
+</html>
